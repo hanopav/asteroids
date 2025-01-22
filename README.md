@@ -1,4 +1,4 @@
-# asteroids
+# ASTEROIDS
 
 * This project has been created as part of the [Boot.dev](https://www.boot.dev/) backend career path.
 
