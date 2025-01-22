@@ -51,7 +51,7 @@ class Player(CircleShape):
         self.rect.center = self.position
 
     def draw(self, screen):
-        pygame.draw.polygon(screen, "white", self.triangle(), 2)
+        pygame.draw.polygon(screen, "green", self.triangle(), 2)
 
     def move(self, dt):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
@@ -63,5 +63,5 @@ class Player(CircleShape):
         direction = pygame.Vector2(0, 1)
         direction = direction.rotate(self.rotation)
         self.velocity = direction * PLAYER_SHOOT_SPEED 
-        shot = Shot(self.position.x, self.position.y, self.velocity)
+        Shot(self.position.x, self.position.y, self.velocity)
         self.timer = PLAYER_SHOOT_COOLDOWN
